@@ -1,0 +1,165 @@
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 20px; }
+
+        /* Navigation */
+        nav { background: #3F301D; box-shadow: 0 2px 10px rgba(0,0,0,0.1); position: sticky; top: 0; z-index: 1000; }
+        .nav-container { display: flex; justify-content: space-between; align-items: center; padding: 1rem 20px; }
+        .logo { display: flex; align-items: center; gap: 10px; font-size: 24px; font-weight: bold; }
+        .nav-links { display: flex; gap: 30px; }
+        .nav-link { background: none; border: none; padding: 10px 15px; color: #ffffff; cursor: pointer; font-size: 16px; transition: color 0.3s; }
+        .nav-link:hover, .nav-link.active { color: #f59e0b; }
+        
+        .logo {
+            width: 75px;  /* Adjust the size of the logo */
+            height: auto;  /* Keep the aspect ratio */
+            margin-right: 10px;  /* Space between logo and text */
+            }
+
+        /* Pages */
+        .page { display: none; }
+        .page.active { display: block; }
+
+        /* Hero */
+        .hero { height: 400px; background: url('Nasi Goreng.jpg'); display: flex; align-items: center; justify-content: center; text-align: center; color: white; }
+        .hero h2 { font-size: 48px; margin-bottom: 20px; }
+        .hero p { font-size: 20px; margin-bottom: 30px; }
+        .btn { background: white; color: #f59e0b; padding: 15px 30px; border: none; border-radius: 8px; font-size: 18px; font-weight: 600; cursor: pointer; transition: all 0.3s; }
+        .btn:hover { background: #f3f4f6; }
+
+        /* Sections */
+        .section { padding: 60px 0; }
+        .section-white { background: white; }
+        .section-gray { background: #f9f9f9; }
+        .section-title { text-align: center; font-size: 36px; font-weight: bold; margin-bottom: 40px; }
+
+        /* Grid */
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
+        .card { background: white; padding: 30px; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); text-align: center; }
+        .card h4 { font-size: 20px; margin-bottom: 15px; color: #f59e0b; }
+
+        /* Menu */
+        .menu-item { display: flex; justify-content: space-between; padding: 15px 0; border-bottom: 1px solid #eee; }
+        .menu-price { color: #f59e0b; font-weight: bold; }
+
+        /* Form */
+        .form { background: #f9f9f9; padding: 30px; border-radius: 12px; margin-top: 30px; }
+        .form-row { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 15px; }
+        .form-input { padding: 12px; border: 1px solid #ddd; border-radius: 8px; font-size: 16px; }
+        .form-input:focus { outline: none; border-color: #f59e0b; }
+        .btn-full { width: 100%; padding: 15px; background: #f59e0b; color: white; border: none; border-radius: 8px; font-size: 16px; cursor: pointer; }
+        .btn-full:hover { background: #d97706; }
+
+        /* Offers Grid */
+        .offers-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 30px; }
+        .offer-card { background: white; border-radius: 12px; box-shadow: 0 4px 20px rgba(0,0,0,0.1); overflow: hidden; }
+        .offer-header { padding: 20px; color: white; font-weight: bold; }
+        .offer-header.happy-hour { background: #f59e0b; }
+        .offer-header.date-night { background: #ef4444; }
+        .offer-header.family { background: #10b981; }
+        .offer-header.birthday { background: #8b5cf6; }
+        .offer-header.wine { background: #6366f1; }
+        .offer-header.lunch { background: #f97316; }
+
+        .offer-header h3 {
+            font-size: 20px;
+            margin-bottom: 5px;
+        }
+
+        .offer-header p {
+            opacity: 0.9;
+        }
+
+        .offer-body {
+            padding: 30px;
+        }
+
+        .offer-discount {
+            font-size: 36px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .offer-discount.amber { color: #f59e0b; }
+        .offer-discount.red { color: #ef4444; }
+        .offer-discount.green { color: #10b981; }
+        .offer-discount.purple { color: #8b5cf6; }
+        .offer-discount.indigo { color: #6366f1; }
+        .offer-discount.orange { color: #f97316; }
+
+        .offer-description {
+            color: #666;
+            margin-bottom: 15px;
+        }
+
+        .offer-details {
+            font-size: 14px;
+            color: #888;
+            margin-bottom: 15px;
+        }
+
+        .offer-badge {
+            padding: 12px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 600;
+        }
+
+        .offer-badge.amber { background: #fef3c7; color: #92400e; }
+        .offer-badge.red { background: #fef2f2; color: #991b1b; }
+        .offer-badge.green { background: #f0fdf4; color: #166534; }
+        .offer-badge.purple { background: #faf5ff; color: #6b21a8; }
+        .offer-badge.indigo { background: #eef2ff; color: #3730a3; }
+        .offer-badge.orange { background: #fff7ed; color: #9a3412; }
+
+        /* Newsletter */
+        .newsletter {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            padding: 40px;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        .newsletter h3 {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 15px;
+        }
+
+        .newsletter p {
+            color: #666;
+            margin-bottom: 30px;
+        }
+
+        .newsletter-form {
+            display: flex;
+            gap: 15px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .newsletter-form input {
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        .newsletter-form input:focus {
+            outline: none;
+            border-color: #f59e0b;
+            box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.1);
+        }
+
+        /* Footer */
+        footer { background: #333; color: white; padding: 40px 0; text-align: center; }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h2 { font-size: 32px; }
+            .nav-links { flex-direction: column; gap: 10px; }
+            .form-row { grid-template-columns: 1fr; }
+        }
