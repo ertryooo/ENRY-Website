@@ -5,259 +5,199 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ENRY Restaurant</title>
-    
+    <link rel="icon" type="image/x-icon" href="logo.png">
 </head>
+
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <img src="logo.png" alt="Logo" class="logo">
-            <div class="logo"> ENRY</div>
+            <div class="logo">
+                <img src="logo.png" alt="Logo" class="logo">
+            </div>
             <div class="nav-links">
                 <button onclick="showPage('home')" class="nav-link active">Home</button>
                 <button onclick="showPage('menu')" class="nav-link">Menu</button>
-                <button onclick="showPage('offers')" class="nav-link">Offers</button>
                 <button onclick="showPage('location')" class="nav-link">Location</button>
+                <button onclick="showPage('reserve')" class="nav-link">Reserve</button>
             </div>
         </div>
     </nav>
 
     <!-- Home Page -->
-    <div id="home" class="page active">
+    <div id='home' class="page active">
         <section class="hero">
             <div>
                 <h2>Welcome to ENRY!</h2>
                 <p>Western food to its finest!</p>
-                <button onclick="showPage('menu')" class="btn">View Our Menu</button>
+                <button onclick="showPage('reserve')" class="btn">Reserve Now</button>
             </div>
         </section>
 
-        <section class="section section-white">
+        <section class="section-cream1">
             <div class="container">
                 <h3 class="section-title">About Us</h3>
-                <div class="grid">
-                    <div class="card">
-                        <h4>👨‍🍳 Expert Chefs</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere nibh ante, a blandit libero posuere feugiat. In at mauris sed leo accumsan gravida et ac arcu. Aliquam quis tincidunt mauris. Integer porttitor efficitur laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sit amet condimentum augue, ac vulputate nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas et massa diam.</p>
-                    </div>
-                    <div class="card">
-                        <h4>🌿 Fresh Ingredients</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere nibh ante, a blandit libero posuere feugiat. In at mauris sed leo accumsan gravida et ac arcu. Aliquam quis tincidunt mauris. Integer porttitor efficitur laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sit amet condimentum augue, ac vulputate nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas et massa diam.</p>
-                    </div>
-                    <div class="card">
-                        <h4>🍷 Fine Dining</h4>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque posuere nibh ante, a blandit libero posuere feugiat. In at mauris sed leo accumsan gravida et ac arcu. Aliquam quis tincidunt mauris. Integer porttitor efficitur laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis sit amet condimentum augue, ac vulputate nibh. Interdum et malesuada fames ac ante ipsum primis in faucibus. Maecenas et massa diam.</p>
-                    </div>
+            <div class="grid">
+            <div class="card">
+                <div class="column1">
+                    <img src="cook.jpg" class="img1">
+                    <img src="spice.jpg" class="img2">
+                    <img src="gather.jpg" class="img3">
                 </div>
+                    <h2>ENRY Restaurant</h2>
+                <div>The Distinctive Experience 
+                    <br>FLAVORFUL, TIMELESS, REFINED
+                    <h3>Remarkable flavors🌿</h3>
+                    At ENRY, every dish is crafted to delight both the palate and the senses. 
+                    <br>Blending Western culinary traditions with a modern touch, we bring 
+                    <br>together rich flavors, quality ingredients, and a passion for excellence 
+                    <br>that has made ENRY a trusted name in Western dining.
+                    <h3>Inspired creations👨‍🍳</h3>
+                    Our menu reflects the diversity of Western cuisine, from classic comfort 
+                    <br>dishes to contemporary specialties. Using premium ingredients and expert 
+                    <br>techniques, our chefs create meals that are both familiar and exciting. 
+                    <br>Highlights include our signature steaks, creamy pastas, and fresh seasonal selections.
+                    <br><h3>Refined settings🍽</h3>
+                    More than just a restaurant, ENRY is a place where moments become memories. 
+                    <br>With versatile spaces and attentive service, we provide the perfect setting 
+                    <br>for intimate dinners, family gatherings, business meetings, or special 
+                    <br>celebrations. Whatever the occasion, ENRY promises a dining experience 
+                    <br>that is elegant, welcoming, and unforgettable.
+                    <br><button onclick="showPage('menu')" class="btn">Check Out Our Menu!</button>
+                </div>
+            </div>
+            </div>
             </div>
         </section>
     </div>
 
     <!-- Menu Page -->
     <div id="menu" class="page">
-        <section class="section section-white">
-            <div class="container">
-                <h2 class="section-title">Our Menu</h2>
-                
-                <div class="card">
-                    <h4>Appetizers</h4>
-                    <div class="menu-item">
-                        <div><strong>Bruschetta Classica</strong><br>Fresh tomatoes, basil, garlic</div>
-                        <span class="menu-price">$12</span>
-                    </div>
-                    <div class="menu-item">
-                        <div><strong>Antipasto Platter</strong><br>Cured meats, cheeses, olives</div>
-                        <span class="menu-price">$18</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h4>Main Courses</h4>
-                    <div class="menu-item">
-                        <div><strong>Spaghetti Carbonara</strong><br>Classic Roman pasta with eggs, cheese</div>
-                        <span class="menu-price">$22</span>
-                    </div>
-                    <div class="menu-item">
-                        <div><strong>Margherita Pizza</strong><br>Tomatoes, fresh mozzarella, basil</div>
-                        <span class="menu-price">$18</span>
-                    </div>
-                    <div class="menu-item">
-                        <div><strong>Osso Buco</strong><br>Braised veal shanks with risotto</div>
-                        <span class="menu-price">$32</span>
-                    </div>
-                </div>
-
-                <div class="card">
-                    <h4>Desserts</h4>
-                    <div class="menu-item">
-                        <div><strong>Tiramisu</strong><br>Classic coffee-flavored dessert</div>
-                        <span class="menu-price">$9</span>
-                    </div>
-                    <div class="menu-item">
-                        <div><strong>Gelato Selection</strong><br>Three scoops of artisanal gelato</div>
-                        <span class="menu-price">$6</span>
-                    </div>
-                </div>
+        <section class="section-cream2">
+            <!-- Ribeye Steak -->
+            <div class="menu-item-ribeye">
+            <div><h1>~Our Menu~</h1><br><h2>Ribeye Steak</h2>
+                <br>Enjoy a tender, perfectly grilled prime steak served with a vibrant 
+                <br>chimichurri—a zesty blend of fresh herbs, garlic, and red wine 
+                <br>vinegar—that complements the flavors of the beef.
             </div>
-        </section>
-    </div>
-
-    <!-- Offers Page -->
-    <div id="offers" class="page">
-        <section class="section section-gray">
-            <div class="container">
-                <h2 class="section-title">Special Offers</h2>
-                
-                <div class="offers-grid">
-                    <!-- Happy Hour -->
-                    <div class="offer-card">
-                        <div class="offer-header happy-hour">
-                            <h3>Happy Hour</h3>
-                            <p>Monday - Friday</p>
-                        </div>
-                        <div class="offer-body">
-                            <div class="offer-discount amber">50% OFF</div>
-                            <p class="offer-description">All appetizers and selected wines</p>
-                            <p class="offer-details">Valid 4:00 PM - 6:00 PM</p>
-                            <div class="offer-badge amber">
-                                <p>Expires: December 31, 2024</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Date Night -->
-                    <div class="offer-card">
-                        <div class="offer-header date-night">
-                            <h3>Date Night Special</h3>
-                            <p>Every Saturday</p>
-                        </div>
-                        <div class="offer-body">
-                            <div class="offer-discount red">$75</div>
-                            <p class="offer-description">3-course meal for two with wine</p>
-                            <p class="offer-details">Includes appetizer, main course, dessert</p>
-                            <div class="offer-badge red">
-                                <p>Reservation required</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Family Sunday -->
-                    <div class="offer-card">
-                        <div class="offer-header family">
-                            <h3>Family Sunday</h3>
-                            <p>Every Sunday</p>
-                        </div>
-                        <div class="offer-body">
-                            <div class="offer-discount green">Kids Eat Free</div>
-                            <p class="offer-description">With every adult main course</p>
-                            <p class="offer-details">Children under 12, limit 2 per table</p>
-                            <div class="offer-badge green">
-                                <p>All day Sunday</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Birthday Special -->
-                    <div class="offer-card">
-                        <div class="offer-header birthday">
-                            <h3>Birthday Celebration</h3>
-                            <p>Any day</p>
-                        </div>
-                        <div class="offer-body">
-                            <div class="offer-discount purple">Free Dessert</div>
-                            <p class="offer-description">Complimentary birthday dessert</p>
-                            <p class="offer-details">With valid ID and minimum 4 guests</p>
-                            <div class="offer-badge purple">
-                                <p>Plus birthday song!</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Wine Wednesday -->
-                    <div class="offer-card">
-                        <div class="offer-header wine">
-                            <h3>Wine Wednesday</h3>
-                            <p>Every Wednesday</p>
-                        </div>
-                        <div class="offer-body">
-                            <div class="offer-discount indigo">30% OFF</div>
-                            <p class="offer-description">All bottles of wine</p>
-                            <p class="offer-details">Dine-in only, premium wines included</p>
-                            <div class="offer-badge indigo">
-                                <p>Perfect for wine lovers</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Lunch Special -->
-                    <div class="offer-card">
-                        <div class="offer-header lunch">
-                            <h3>Express Lunch</h3>
-                            <p>Monday - Friday</p>
-                        </div>
-                        <div class="offer-body">
-                            <div class="offer-discount orange">$15</div>
-                            <p class="offer-description">2-course lunch menu</p>
-                            <p class="offer-details">11:30 AM - 3:00 PM</p>
-                            <div class="offer-badge orange">
-                                <p>Quick service guaranteed</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Newsletter Signup -->
-                <div class="newsletter">
-                    <h3>Stay Updated</h3>
-                    <p>Subscribe to our newsletter for exclusive offers and updates</p>
-                    <div class="newsletter-form">
-                        <input type="email" placeholder="Enter your email">
-                        <button class="btn">Subscribe</button>
-                    </div>
-                </div>
+                <span class="menu-price">Rp 106.000</span>
             </div>
-        </section>
+
+            <!-- Striploin Steak -->
+            <div class="menu-item-striploin">
+            <div><h2>Striploin Steak</h2>
+                <br>Exquisitely seared prime cut steak, tender and rich in flavor, accompanied 
+                <br>by crisp golden potato wedges delicately infused with fresh herbs.  
+                <br>Elegantly balanced and crafted for a refined dining experience.
+            </div>
+                <span class="menu-price">Rp 100.000</span>
+            </div>
+
+            <!-- Salmon Steak -->
+            <div class="menu-item-salmon">
+            <div><h2>Salmon Steak</h2>
+                <br>A succulent, pan-seared salmon steak glazed with a silky soy reduction, 
+                <br>infused with subtle notes of ginger and sesame, served with a bed of 
+                <br>seasonal greens.
+            </div>
+                <span class="menu-price">Rp 124.000</span>
+            </div>
+
+            <!-- Chicken Steak -->
+            <div class="menu-item-chicken">
+            <div><h2>Chicken Steak</h2>
+                <br>Succulent free-range chicken, delicately grilled over charcoal to capture 
+                <br>its natural essence, paired with the luxurious creaminess of artisanal goat 
+                <br>cheese. Presented alongside a vibrant medley of seasonal greens, this dish 
+                <br>offers an elegant balance of richness and freshness, curated for a truly 
+                <br>indulgent dining experience.
+            </div>
+                <span class="menu-price">Rp 70.000</span>
+            </div>
+
+            <!-- Pasta -->
+            <div class="menu-item-pasta">
+            <div><h2>Pasta</h2>
+                <br>Al dente spaghetti delicately tossed in fragrant garlic-infused olive oil, 
+                <br>elevated with sweet prawns and tender clams. Finished with a subtle touch 
+                <br>of red chili heat, this classic Italian dish is reimagined with elegance 
+                <br>and depth of flavor.
+            </div>
+                <span class="menu-price">Rp 70.000</span>
+            </div>
+
+            <!-- Express Lunch -->
+            <div class="menu-item-express">
+            <div><h2>Express Lunch</h2>
+                <br>A symphony of flavors — seared fish, tender meatballs, vibrant greens, and 
+                <br>refined pairings, crafted for an elevated midday indulgence.
+            </div>
+                <span class="menu-price">Rp 300.000</span>
+            </div>
+
+            <!-- Pavlova -->
+            <div class="menu-item-pavlova">
+            <div><h2>Pavlova</h2>
+                <br>A delicate masterpiece featuring espresso-soaked ladyfingers, velvety mascarpone 
+                <br>cream, and a dusting of rich cocoa, crafted in-house to deliver an elegant balance 
+                <br>of bold coffee taste and creamy sweetness.
+                <br><button onclick="showPage('reserve')" class="btn">Reserve Now</button>
+            </div>
+                <span class="menu-price">Rp 38.000</span>
+            </div>
+        </section>    
     </div>
 
     <!-- Location Page -->
     <div id="location" class="page">
-        <section class="section section-white">
+        <section class="section-cream1">
             <div class="container">
                 <h2 class="section-title">Visit Us</h2>
                 
                 <div class="grid">
                     <div class="card">
+                        <div class="column2">
                         <h4>📍 Address</h4>
-                        <p>123 Italian Street<br>New York, NY 10001</p>
+                        <p>RW.4, Kebon Jeruk, Kebon jeruk, 
+                        <br>West Jakarta City, Jakarta 11530</p>
                         <br>
                         <h4>📞 Phone</h4>
-                        <p>(555) 123-4567</p>
+                        <p>+6287878491902</p>
                         <br>
                         <h4>🕒 Hours</h4>
                         <p>Mon-Fri: 11:30 AM - 10:00 PM<br>Sat-Sun: 12:00 PM - 11:00 PM</p>
-                    </div>
-
-                    <div class="card">
-                        <h4>Make a Reservation</h4>
-                        <div class="form">
-                            <div class="form-row">
-                                <input type="text" placeholder="Your Name" class="form-input">
-                                <input type="email" placeholder="Email" class="form-input">
-                            </div>
-                            <div class="form-row">
-                                <input type="date" class="form-input">
-                                <input type="time" class="form-input">
-                                <select class="form-input">
-                                    <option>2 Guests</option>
-                                    <option>4 Guests</option>
-                                    <option>6 Guests</option>
-                                </select>
-                            </div>
-                            <button onclick="makeReservation()" class="btn-full">Request Reservation</button>
-                            <p style="font-size: 12px; color: #666; margin-top: 10px;">*Demo form - no actual reservation made</p>
                         </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.5535470934615!2d106.7766876748867!3d-6.19044316065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6e4f448b2f5%3A0xe8345509b0da955e!2sJl.%20Karmel%20Raya%2C%20RW.4%2C%20Kb.%20Jeruk%2C%20Kec.%20Kb.%20Jeruk%2C%20Kota%20Jakarta%20Barat%2C%20Daerah%20Khusus%20Ibukota%20Jakarta%2011530!5e0!3m2!1sen!2sid!4v1756833367123!5m2!1sen!2sid" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                     </div>
                 </div>
+            </div>
+        </section>
+    </div>            
+
+                    
+
+    <!-- Reservation Page -->
+    <div id='reserve' class="page">
+        <section class="section-cream1">
+            <div class="grid">
+            <div class="card">
+                <h4>Make a Reservation</h4>
+                <div class="form">
+                <form action="connect.php" method="post">
+                    <div class="form-row">
+                        <input type="text" placeholder="Your Name" class="form-input" id="nama" name="nama">
+                        <input type="email" placeholder="Email" class="form-input" id="email" name="email">
+                        <input type="number" placeholder="Phone Number" class="form-input" id="notelepon" name="notelepon">
+                    </div>
+                    <div class="form-row">
+                        <input type="date" class="form-input" id="tanggal" name="tanggal">
+                        <input type="time" class="form-input" id="waktu" name="waktu">
+                        <input type="number" placeholder="Number of Guest" class="form-input" id="jumlahorang" name="jumlahorang">
+                    </div>
+                    <button onclick="makeReservation()" class="btn-full">Request Reservation</button>
+                </div>
+            </div>
             </div>
         </section>
     </div>
@@ -268,8 +208,7 @@
             <p>&copy; 2025 ENRY Restaurant. All rights reserved.</p>
         </div>
     </footer>
-
-    <script>
+  <script>
         function showPage(pageId) {
             document.querySelectorAll('.page').forEach(page => page.classList.remove('active'));
             document.getElementById(pageId).classList.add('active');
@@ -286,12 +225,12 @@
             const date = document.querySelector('input[type="date"]').value;
             
             if (name && email && date) {
-                alert(`Reservation request received for ${name} on ${date}. We'll contact you soon! (Demo only)`);
+                alert(`Reservation request received for ${name} on ${date}. `);
                 document.querySelector('.form').reset();
             } else {
                 alert('Please fill in all fields.');
             }
         }
     </script>
-<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'96b39d56c5c6b593',t:'MTc1NDUzNjU4MC4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9774059ec6efff7e',t:'MTc1NjU1NDExNy4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
 </html>
